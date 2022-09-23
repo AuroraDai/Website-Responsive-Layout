@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOSANGELES MOUNTAINS</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="hamburger">
+            <div class="hamburger-bar"></div>
+        </div>
+
+        <div class="logo">
+            <img src="./img/Logonav.png" alt="">
+        </div>
+        <ul class="sticky_nav">
+            <li>
+                <a href="#history">01.HISTORY</a>
+            </li>
+            <li>
+
+                <a href="#">02.TEAM</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="section1">
+
+    </section>
+
+    <section class="section2" id="history">
+        <div class="section2_nav">
+            <div class="logo">
+                <img src="./img/Logo.png" alt="">
+            </div>
+            <ul>
+                <li>
+                    <a href="#history">01.HISTORY</a>
+                </li>
+                <li>
+
+                    <a href="#">02.TEAM</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section2_page1">
+
+            <div class="heading_box">
+                <h1 class="heading">
+                    <span class="number">01</span>
+                    <span class="title">HISTORY</span>
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum, consectetur
+                    mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras
+                    scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut
+                    quam. Vivamus suscipit dignissim tortor nec congue.</p>
+            </div>
+
+            <div class="carousel">
+                <div class="frame">
+                    <ul class="pic_list">
+                        <li>
+                            <img src="./img/photo-1458442310124-dde6edb43d10.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/photo-1443980995706-8d107e98e707-1.png" alt="">
+                        </li>
+
+
+                        <li>
+                            <img src="./img/photo-1458442310124-dde6edb43d10.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/photo-1443980995706-8d107e98e707-1.png" alt="">
+                        </li>
+                    </ul>
+
+                    <ul class="dot_list">
+                        <li class="current"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section2_page2">
+            <div class="heading_banner">
+                <div class="heading_box">
+                    <h1 class="heading">
+                        <span class="number">02</span>
+                        <span class="title">CLIMB</span>
+                    </h1>
+                    <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac,
+                        tristique ut quam. Vivamus suscipit dignissim tortor nec congue.</p>
+                </div>
+            </div>
+
+            <div class="section2_main">
+                <div class="section2_page2_tab">
+                    <ul>
+                        <li class="current">MOUNTAIN 1</li>
+                        <li>MOUNTAIN 2</li>
+                    </ul>
+                </div>
+                <div class="tab_pics">
+                    <div class="time_sheet">
+                        <ul>
+                            <li>25 Nov 2016 Vestibulurn Viverra</li>
+                            <li>28 Nov 2016 Vestibulurn Viverra</li>
+                            <li>18 Dec 2016 Vestibulurn Viverra</li>
+                            <li>7 Jan 2016 Vestibulurn Viverra</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <span class="footer_logo">
+                        <img src="./img/Logo.png" alt="">
+                    </span>
+                    <span class="copyright">COPYRIGHT 2016. ALL RIGHTS RESERVED</span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script>
+        let hamburger = document.querySelector('.hamburger');
+        let mobile_menu = document.querySelector('.sticky_nav');
+        let body = document.querySelector('body')
+        let nav = document.querySelector('nav');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobile_menu.classList.toggle('active');
+            body.classList.toggle('noscroll');
+
+
+        })
+
+        mobile_menu.addEventListener('click', () => {
+            mobile_menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            body.classList.toggle('noscroll');
+
+        })
+
+ 
+
+
+
+    </script>
+</body>
+
+</html>
